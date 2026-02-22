@@ -1,0 +1,31 @@
+201 ICON "resources/icon_stop.ico"
+202 ICON "resources/icon_run.ico"
+
+1 VERSIONINFO
+FILEVERSION     1,1
+PRODUCTVERSION  1,1
+FILEFLAGSMASK   0x3fL
+FILEFLAGS       0x0L
+FILEOS          0x40004L
+FILETYPE        0x1L
+FILESUBTYPE     0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName",      "kishi Studios"
+            VALUE "FileDescription",  "Auto Clicker Pro"
+            VALUE "FileVersion",      "1.1"
+            VALUE "InternalName",     "kishiClicker"
+            VALUE "LegalCopyright",   "Copyright (C) 2026 by kishikuun"
+            VALUE "OriginalFilename", "kishiClicker.exe"
+            VALUE "ProductName",      "Automation Suite"
+            VALUE "ProductVersion",   "1.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
