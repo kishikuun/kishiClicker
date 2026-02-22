@@ -1,0 +1,37 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "Build AutoClicker Win32",
+            "command": "g++",
+            "args": [
+                "-g",
+                "${file}",
+				"resources.res",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe",
+                "-std=c++20",
+                "-O2",
+                "-mwindows",
+                "-lcomctl32",
+                "-lgdi32",
+                "-luser32",
+                "-lkernel32",
+                "-lwinmm",
+                "-static"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Compiler: GCC 15.2 with Win32 API and C++20"
+        }
+    ]
+}
