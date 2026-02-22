@@ -19,7 +19,7 @@ A highly optimized, zero-drift, stochastic auto-clicker built with modern C++20 
 This project heavily utilizes C++20 concurrency features (`std::jthread`, `std::stop_token`) and requires a modern compiler like **GCC 15.2+ (MinGW-w64)**.
 
 ### 1. Compile Resources
-[cite_start]First, compile the resource file containing the UI icons and version metadata:
+First, compile the resource file containing the UI icons and version metadata:
 ```bash
 windres resources.rc -O coff -o resources.res
 ```
@@ -31,10 +31,10 @@ g++ main.cpp resources.res -o "kishiClicker.exe" -std=c++20 -O3 -flto -s -mwindo
 ```
 
 🚀 Usage
-Launch kishiClicker.exe.
-Set your desired base interval (Hours, Minutes, Seconds, Milliseconds).
-(Optional but recommended) Enable Random Offset to add human-like variance to the click rhythm.
-Select the Mouse Button and Click Type.
-Press the designated Hotkey (or click START) to begin execution. Press again to STOP.
+1. Launch kishiClicker.exe.
+2. Set your desired base interval (Hours, Minutes, Seconds, Milliseconds).
+3. (Optional but recommended) Enable Random Offset to add human-like variance to the click rhythm.
+4. Select the Mouse Button and Click Type.
+5. Press the designated Hotkey (or click START) to begin execution. Press again to STOP.
 
 👤 Author: kishikuun 
