@@ -24,7 +24,7 @@ This project heavily utilizes C++20 concurrency features (`std::jthread`, `std::
 windres resources.rc -O coff -o resources.res
 ```
 
-2. Compile the Application (Release Build)
+### 2. Compile the Application (Release Build)
 Build the final executable using extreme optimization flags (LTO, dead-code elimination, and static linking) for the smallest possible footprint:
 ```bash
 g++ main.cpp resources.res -o "kishiClicker.exe" -std=c++20 -O3 -flto -s -mwindows -ffunction-sections -fdata-sections -Wl,--gc-sections -lcomctl32 -lgdi32 -luser32 -lkernel32 -lwinmm -static
